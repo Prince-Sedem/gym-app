@@ -4,7 +4,7 @@ import { StatusBar, Image,  View, Text, TouchableOpacity } from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import Animated, { FadeInDown } from 'react-native-reanimated';  
 
-export default function Splash() {
+export default function Splash({navigation}) {
   return (
     <View className="flex-1 flex justify-end">
         <StatusBar style="light" />
@@ -21,7 +21,7 @@ export default function Splash() {
                     Prince <Text className="text-rose-500">Workouts</Text>
                 </Text>
                 <Text style={{fontSize: hp(5)}}  className="text-white font-bold tracking-wide">
-                    Sessions 
+                    Arena 
                 </Text>
             </Animated.View>
 
@@ -30,6 +30,7 @@ export default function Splash() {
                 <TouchableOpacity
                 style={{width: wp(80), height: hp(7)}}
                 className="bg-rose-500 flex items-center justify-center mx-auto rounded-full border-[2px] border-neutral-200"
+                onPress={() => navigation.navigate("SignIn")}
                 >
                     <Text style={{fontSize: hp(3)}} className="text-white font-bold tracking-widest">
                         Get Started
