@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Splash from './screens/Splash';
 import SignIn from './screens/SignIn';
 import SignUp from './screens/SignUp';
+import HomePage from './screens/HomePage';
 
 
 
@@ -23,6 +24,7 @@ function App() {
          isChecked={box} 
         />
         <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="Home" component={HomePage} />
       </Stack.Navigator>
     </NavigationContainer>
   );
