@@ -21,21 +21,21 @@ export default function SignIn({navigation}) {
       <Text className="text-slate-500  text-sm mt-2">Welcome back! Please enter your details.</Text>
       </View>
       <Text className="ml-3 text-m text-white mt-3 mb-2">Email</Text>
-      <View className=" ml-3 ">
+      <View className=" ml-3 bg-slate-900 w-[370px] rounded-xl">
       <Image  source={require('../assets/images/email.png')} className="w-5 h-5 absolute mt-3 ml-2"  />
       <TextInput
-      className="text-slate-500 bg-gray-700  border border-slate-400 rounded-xl w-[370px] h-10 pl-9"
+      className="text-slate-500   border border-slate-400 rounded-xl w-[370px] h-10 pl-9"
       placeholder='please input email'
       placeholderTextColor="#64748b"
 
       />
       </View>
       <Text className="ml-3 text-m text-white mt-3 mb-2">Password</Text>
-      <View className=" ml-3 ">
+      <View className=" ml-3 bg-slate-900 w-[370px] rounded-xl">
       <Image  source={require('../assets/images/eye.png')} className="w-5 h-5 absolute mt-3 ml-[335px]"   />
       <Image  source={require('../assets/images/key.png')} className="w-5 h-5 absolute mt-3 ml-2 text-slate-500"  />
       <TextInput
-      className="text-slate-500 bg-gray-700 border border-slate-400 rounded-xl w-[370px] h-10 pl-9"
+      className="text-slate-500  border border-slate-400 rounded-xl w-[370px] h-10 pl-9"
       placeholder='please input password'
       placeholderTextColor="#64748b"
       />
@@ -78,7 +78,7 @@ export default function SignIn({navigation}) {
 
       </TouchableOpacity>
 
-      <View className="flex-row justify-center mt-36 ">
+      <View className="flex-row justify-center mt-32 ">
         <Text className="text-slate-500 text-m">Don't have an account?</Text>
         <Text 
         onPress={() => navigation.navigate("SignUp")} className="font-bold ml-1 text-white text-m">Sign up</Text>
