@@ -54,7 +54,7 @@ export default function SignIn({navigation}) {
       </View>
       
 
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate("Home")}>
             <Text className="text-center text-black bg-white font-bold border border-slate-500 ml-3 mt-5 pt-2 rounded-xl w-[370px] h-10 ">Sign In</Text>
 
       </TouchableOpacity>
